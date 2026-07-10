@@ -54,32 +54,44 @@
       </div>
     </section>
 
-    <section class="section section-light">
+    <section class="section section-light bim-web-portfolio">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Portfolio</p>
-          <h2>Selected BIM &amp; Coordination work</h2>
+        <div class="bim-portfolio-intro">
+          <div>
+            <p class="eyebrow">Project Portfolio</p>
+            <h2>Building-envelope work, reorganized for the web.</h2>
+            <p>
+              A compact archive of facade models, coordinated assemblies, adaptive systems,
+              and field-driven studies. Select any project to view the full composition.
+            </p>
+          </div>
+
+          <a
+            class="button portfolio-pdf-button"
+            href="assets/bim-coordination-portfolio.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Open PDF ↗
+          </a>
         </div>
 
-        <div class="category-work-grid">
-          <article class="category-project reveal">
-            <span class="project-number">01</span>
-            <h3>Facade Modeling &amp; Design Assist</h3>
-            <p>Show how a project model supported estimating, engineering coordination, shop drawings, or installation planning.</p>
-            <span class="project-status">Add project case study ↗</span>
-          </article>
-          <article class="category-project reveal">
-            <span class="project-number">02</span>
-            <h3>Curtain Wall Coordination</h3>
-            <p>Add model screenshots, clash-resolution examples, coordinated details, and a short explanation of your role.</p>
-            <span class="project-status">Add project case study ↗</span>
-          </article>
-          <article class="category-project reveal">
-            <span class="project-number">03</span>
-            <h3>Field Planning &amp; Model Use</h3>
-            <p>Feature layout studies, equipment access, installation sequencing, embeds, clips, or field-verification workflows.</p>
-            <span class="project-status">Add project case study ↗</span>
-          </article>
+        <div class="bim-section-links" aria-label="BIM portfolio sections">
+          <a href="#project-archive">
+            <span>01</span>
+            <strong>Project Archive</strong>
+            <small>46 modeled projects</small>
+          </a>
+          <a href="#adaptive-systems">
+            <span>02</span>
+            <strong>Adaptive Systems</strong>
+            <small>Flexible unitized families</small>
+          </a>
+          <a href="#field-fabrication">
+            <span>03</span>
+            <strong>Field + Fabrication</strong>
+            <small>Model-to-installation workflow</small>
+          </a>
         </div>
 
         <nav class="category-navigation reveal" aria-label="Portfolio categories">
@@ -89,580 +101,1233 @@
           <a href="visualization.html">Visualization</a>
         </nav>
 
-        <section class="portfolio-pdf portfolio-pdf-visible" aria-labelledby="bim-pdf-title">
-          <div class="portfolio-pdf-heading">
+        <section class="bim-featured" aria-labelledby="featured-projects-title">
+          <div class="bim-section-heading">
             <div>
-              <p class="eyebrow">Project Portfolio</p>
-              <h2 id="bim-pdf-title">BIM &amp; Coordination Portfolio</h2>
+              <p class="eyebrow">Featured Work</p>
+              <h3 id="featured-projects-title">A few projects at a larger scale.</h3>
             </div>
-
-            <a
-              class="button portfolio-pdf-button"
-              href="assets/bim-coordination-portfolio.pdf"
-              target="_blank"
-              rel="noopener"
-            >
-              Open PDF ↗
-            </a>
+            <p>Hover for project information. Select a project to open a larger view.</p>
           </div>
 
-          <div class="portfolio-reader" data-portfolio-reader>
-            <div
-              class="portfolio-page-status"
-              aria-live="polite"
-              aria-atomic="true"
-            >
-              <span>Page</span>
-              <strong id="portfolio-current-page">01</strong>
-              <span>/ 30</span>
-            </div>
+          <div class="bim-feature-grid">
 
-            <ol class="portfolio-spreads" aria-label="BIM and Coordination portfolio pages">
-            <li
-              class="portfolio-spread portfolio-spread--cover"
-              id="portfolio-page-1"
-              data-portfolio-page="1"
+          <article class="bim-project-card bim-project-card--featured-1">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/200-mission.webp"
+              data-title="200 Mission"
+              data-address="200 Mission Street, San Francisco, CA 94105"
             >
-              <img
-                src="assets/bim-portfolio-pages/page-01.webp"
-                alt="BIM portfolio page 1: 200 Mission"
-                width="1225"
-                height="1582"
-                loading="eager"
-                decoding="async" fetchpriority="high"
-              />
-              <div class="portfolio-spread-caption">
-                <span>200 Mission</span>
-                <strong>Page 01 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-2"
-              data-portfolio-page="2"
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/200-mission.webp"
+                  alt="200 Mission BIM model and coordination views"
+                  loading="eager"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">High-rise</span>
+                <strong>200 Mission</strong>
+                <span>200 Mission Street, San Francisco, CA 94105</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--featured-2">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/stanford-bridge.webp"
+              data-title="Stanford Bridge"
+              data-address="777 Airport Blvd., Burlingame, CA 94010"
             >
-              <img
-                src="assets/bim-portfolio-pages/page-02.webp"
-                alt="BIM portfolio page 2: 405 Industrial and Samuel Merritt University"
-                width="2450"
-                height="1582"
-                loading="eager"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>405 Industrial and Samuel Merritt University</span>
-                <strong>Page 02 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-3"
-              data-portfolio-page="3"
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/stanford-bridge.webp"
+                  alt="Stanford Bridge BIM model and coordination views"
+                  loading="eager"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Healthcare</span>
+                <strong>Stanford Bridge</strong>
+                <span>777 Airport Blvd., Burlingame, CA 94010</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--featured-3">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/samuel-merritt-university.webp"
+              data-title="Samuel Merritt University"
+              data-address="490 S Mathilda Avenue, Sunnyvale, CA 94086"
             >
-              <img
-                src="assets/bim-portfolio-pages/page-03.webp"
-                alt="BIM portfolio page 3: Stanford Bridge and 490 South Matilda"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Stanford Bridge and 490 South Matilda</span>
-                <strong>Page 03 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-4"
-              data-portfolio-page="4"
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/samuel-merritt-university.webp"
+                  alt="Samuel Merritt University BIM model and coordination views"
+                  loading="eager"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>Samuel Merritt University</strong>
+                <span>490 S Mathilda Avenue, Sunnyvale, CA 94086</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--featured-4">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/ssf-wellness.webp"
+              data-title="SSF Wellness"
+              data-address="1024 Mission Road, South San Francisco, CA 94080"
             >
-              <img
-                src="assets/bim-portfolio-pages/page-04.webp"
-                alt="BIM portfolio page 4: 777 Airport Boulevard and ACLS"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>777 Airport Boulevard and ACLS</span>
-                <strong>Page 04 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-5"
-              data-portfolio-page="5"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-05.webp"
-                alt="BIM portfolio page 5: 888 Ross and IQHQ Aventine"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>888 Ross and IQHQ Aventine</span>
-                <strong>Page 05 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-6"
-              data-portfolio-page="6"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-06.webp"
-                alt="BIM portfolio page 6: City of Hope and 1389 Moffett Park"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>City of Hope and 1389 Moffett Park</span>
-                <strong>Page 06 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-7"
-              data-portfolio-page="7"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-07.webp"
-                alt="BIM portfolio page 7: Project 63 and Project Nomar North"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Project 63 and Project Nomar North</span>
-                <strong>Page 07 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-8"
-              data-portfolio-page="8"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-08.webp"
-                alt="BIM portfolio page 8: Project Nomar South and Pier 70A"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Project Nomar South and Pier 70A</span>
-                <strong>Page 08 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-9"
-              data-portfolio-page="9"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-09.webp"
-                alt="BIM portfolio page 9: Moffett Towers Building 6 and The Ranch Lot Studios"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Moffett Towers Building 6 and The Ranch Lot Studios</span>
-                <strong>Page 09 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-10"
-              data-portfolio-page="10"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-10.webp"
-                alt="BIM portfolio page 10: Joint Venture Cancer Center and UNLV"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Joint Venture Cancer Center and UNLV</span>
-                <strong>Page 10 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-11"
-              data-portfolio-page="11"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-11.webp"
-                alt="BIM portfolio page 11: UCSD Discovery and UNR Mathewson"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>UCSD Discovery and UNR Mathewson</span>
-                <strong>Page 11 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-12"
-              data-portfolio-page="12"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-12.webp"
-                alt="BIM portfolio page 12: Saint Francis Highschool and Adaptive Units"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Saint Francis Highschool and Adaptive Units</span>
-                <strong>Page 12 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-13"
-              data-portfolio-page="13"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-13.webp"
-                alt="BIM portfolio page 13: Adaptive Units examples"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Adaptive Units examples</span>
-                <strong>Page 13 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-14"
-              data-portfolio-page="14"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-14.webp"
-                alt="BIM portfolio page 14: Adaptive door units"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Adaptive door units</span>
-                <strong>Page 14 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-15"
-              data-portfolio-page="15"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-15.webp"
-                alt="BIM portfolio page 15: UCSF Benioff Parking Structure and UCSC Heller Housing"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>UCSF Benioff Parking Structure and UCSC Heller Housing</span>
-                <strong>Page 15 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-16"
-              data-portfolio-page="16"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-16.webp"
-                alt="BIM portfolio page 16: East County Services Center and Sonoma Government Center"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>East County Services Center and Sonoma Government Center</span>
-                <strong>Page 16 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-17"
-              data-portfolio-page="17"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-17.webp"
-                alt="BIM portfolio page 17: UCB Heathcock and SFO Guardrail"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>UCB Heathcock and SFO Guardrail</span>
-                <strong>Page 17 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-18"
-              data-portfolio-page="18"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-18.webp"
-                alt="BIM portfolio page 18: SFO Icebox and SFUSD"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>SFO Icebox and SFUSD</span>
-                <strong>Page 18 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-19"
-              data-portfolio-page="19"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-19.webp"
-                alt="BIM portfolio page 19: STEM Mission College and Gilead Technical Development Center"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>STEM Mission College and Gilead Technical Development Center</span>
-                <strong>Page 19 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-20"
-              data-portfolio-page="20"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-20.webp"
-                alt="BIM portfolio page 20: Workday Meeting Center and West Valley College"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Workday Meeting Center and West Valley College</span>
-                <strong>Page 20 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-21"
-              data-portfolio-page="21"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-21.webp"
-                alt="BIM portfolio page 21: SFO Cargo and Sutter MOB"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>SFO Cargo and Sutter MOB</span>
-                <strong>Page 21 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-22"
-              data-portfolio-page="22"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-22.webp"
-                alt="BIM portfolio page 22: Millbrae Yards Phase II and Monterey Terminal"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Millbrae Yards Phase II and Monterey Terminal</span>
-                <strong>Page 22 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-23"
-              data-portfolio-page="23"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-23.webp"
-                alt="BIM portfolio page 23: Davidson and Licht and CCSF Diego Rivera"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Davidson and Licht and CCSF Diego Rivera</span>
-                <strong>Page 23 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-24"
-              data-portfolio-page="24"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-24.webp"
-                alt="BIM portfolio page 24: SLAC National Accelerator Lab"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>SLAC National Accelerator Lab</span>
-                <strong>Page 24 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-25"
-              data-portfolio-page="25"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-25.webp"
-                alt="BIM portfolio page 25: San Quentin Rehabilitation Center"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>San Quentin Rehabilitation Center</span>
-                <strong>Page 25 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-26"
-              data-portfolio-page="26"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-26.webp"
-                alt="BIM portfolio page 26: Construction and fabrication photography"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Construction and fabrication photography</span>
-                <strong>Page 26 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-27"
-              data-portfolio-page="27"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-27.webp"
-                alt="BIM portfolio page 27: Stanford Atrium"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>Stanford Atrium</span>
-                <strong>Page 27 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-28"
-              data-portfolio-page="28"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-28.webp"
-                alt="BIM portfolio page 28: YMCA Redwood City"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>YMCA Redwood City</span>
-                <strong>Page 28 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-29"
-              data-portfolio-page="29"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-29.webp"
-                alt="BIM portfolio page 29: SSF Wellness"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>SSF Wellness</span>
-                <strong>Page 29 / 30</strong>
-              </div>
-            </li>
-            <li
-              class="portfolio-spread"
-              id="portfolio-page-30"
-              data-portfolio-page="30"
-            >
-              <img
-                src="assets/bim-portfolio-pages/page-30.webp"
-                alt="BIM portfolio page 30: SFSU Canopy"
-                width="2450"
-                height="1582"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="portfolio-spread-caption">
-                <span>SFSU Canopy</span>
-                <strong>Page 30 / 30</strong>
-              </div>
-            </li>
-            </ol>
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/ssf-wellness.webp"
+                  alt="SSF Wellness BIM model and coordination views"
+                  loading="eager"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Healthcare</span>
+                <strong>SSF Wellness</strong>
+                <span>1024 Mission Road, South San Francisco, CA 94080</span>
+              </span>
+            </button>
+          </article>
           </div>
+        </section>
+
+        <section class="bim-project-archive" id="project-archive" aria-labelledby="project-archive-title">
+          <div class="bim-section-heading">
+            <div>
+              <p class="eyebrow">Project Index</p>
+              <h3 id="project-archive-title">A coordinated archive, without the page-by-page scroll.</h3>
+            </div>
+            <p id="bim-project-count">Showing 12 of 42 archive projects</p>
+          </div>
+
+          <div class="bim-project-grid" id="bim-project-grid">
+
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/405-industrial.webp"
+              data-title="405 Industrial"
+              data-address="405 Industrial Road, San Carlos, CA 94070"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/405-industrial.webp"
+                  alt="405 Industrial BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>405 Industrial</strong>
+                <span>405 Industrial Road, San Carlos, CA 94070</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/490-south-matilda.webp"
+              data-title="490 South Matilda"
+              data-address="490 S Mathilda Avenue, Sunnyvale, CA 94086"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/490-south-matilda.webp"
+                  alt="490 South Matilda BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>490 South Matilda</strong>
+                <span>490 S Mathilda Avenue, Sunnyvale, CA 94086</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/777-airport-boulevard.webp"
+              data-title="777 Airport Boulevard"
+              data-address="777 Airport Blvd., Burlingame, CA 94010"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/777-airport-boulevard.webp"
+                  alt="777 Airport Boulevard BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Mixed-use</span>
+                <strong>777 Airport Boulevard</strong>
+                <span>777 Airport Blvd., Burlingame, CA 94010</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/acls.webp"
+              data-title="ACLS"
+              data-address="490 S Mathilda Avenue, Sunnyvale, CA 94086"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/acls.webp"
+                  alt="ACLS BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>ACLS</strong>
+                <span>490 S Mathilda Avenue, Sunnyvale, CA 94086</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/888-ross.webp"
+              data-title="888 Ross"
+              data-address="777 Airport Blvd., Burlingame, CA 94010"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/888-ross.webp"
+                  alt="888 Ross BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>888 Ross</strong>
+                <span>777 Airport Blvd., Burlingame, CA 94010</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/iqhq-aventine.webp"
+              data-title="IQHQ Aventine"
+              data-address="3000 Mission College Blvd., Santa Clara, CA 95054"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/iqhq-aventine.webp"
+                  alt="IQHQ Aventine BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Life science</span>
+                <strong>IQHQ Aventine</strong>
+                <span>3000 Mission College Blvd., Santa Clara, CA 95054</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/city-of-hope.webp"
+              data-title="City of Hope"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/city-of-hope.webp"
+                  alt="City of Hope BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Healthcare</span>
+                <strong>City of Hope</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/1389-moffett-park.webp"
+              data-title="1389 Moffett Park"
+              data-address="490 S Mathilda Avenue, Sunnyvale, CA 94086"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/1389-moffett-park.webp"
+                  alt="1389 Moffett Park BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>1389 Moffett Park</strong>
+                <span>490 S Mathilda Avenue, Sunnyvale, CA 94086</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/project-63.webp"
+              data-title="Project 63"
+              data-address="777 Airport Blvd., Burlingame, CA 94010"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/project-63.webp"
+                  alt="Project 63 BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>Project 63</strong>
+                <span>777 Airport Blvd., Burlingame, CA 94010</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/project-nomar-north.webp"
+              data-title="Project Nomar North"
+              data-address="3000 Mission College Blvd., Santa Clara, CA 95054"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/project-nomar-north.webp"
+                  alt="Project Nomar North BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>Project Nomar North</strong>
+                <span>3000 Mission College Blvd., Santa Clara, CA 95054</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/project-nomar-south.webp"
+              data-title="Project Nomar South"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/project-nomar-south.webp"
+                  alt="Project Nomar South BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>Project Nomar South</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card ">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/pier-70a.webp"
+              data-title="Pier 70A"
+              data-address="3000 Mission College Blvd., Santa Clara, CA 95054"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/pier-70a.webp"
+                  alt="Pier 70A BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>Pier 70A</strong>
+                <span>3000 Mission College Blvd., Santa Clara, CA 95054</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/moffett-towers-building-6.webp"
+              data-title="Moffett Towers Building 6"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/moffett-towers-building-6.webp"
+                  alt="Moffett Towers Building 6 BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>Moffett Towers Building 6</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/the-ranch-lot-studios.webp"
+              data-title="The Ranch Lot Studios"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/the-ranch-lot-studios.webp"
+                  alt="The Ranch Lot Studios BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Studios</span>
+                <strong>The Ranch Lot Studios</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/joint-venture-cancer-center.webp"
+              data-title="Joint Venture Cancer Center"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/joint-venture-cancer-center.webp"
+                  alt="Joint Venture Cancer Center BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Healthcare</span>
+                <strong>Joint Venture Cancer Center</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/unlv.webp"
+              data-title="UNLV"
+              data-address="3000 Mission College Blvd., Santa Clara, CA 95054"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/unlv.webp"
+                  alt="UNLV BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>UNLV</strong>
+                <span>3000 Mission College Blvd., Santa Clara, CA 95054</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/ucsd-discovery.webp"
+              data-title="UCSD Discovery"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/ucsd-discovery.webp"
+                  alt="UCSD Discovery BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>UCSD Discovery</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/unr-mathewson.webp"
+              data-title="UNR Mathewson"
+              data-address="3000 Mission College Blvd., Santa Clara, CA 95054"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/unr-mathewson.webp"
+                  alt="UNR Mathewson BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>UNR Mathewson</strong>
+                <span>3000 Mission College Blvd., Santa Clara, CA 95054</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/saint-francis-high-school.webp"
+              data-title="Saint Francis High School"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/saint-francis-high-school.webp"
+                  alt="Saint Francis High School BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>Saint Francis High School</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/ucsf-benioff-parking-structure.webp"
+              data-title="UCSF Benioff Parking Structure"
+              data-address="747 52nd St, Oakland, CA 94609"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/ucsf-benioff-parking-structure.webp"
+                  alt="UCSF Benioff Parking Structure BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Healthcare</span>
+                <strong>UCSF Benioff Parking Structure</strong>
+                <span>747 52nd St, Oakland, CA 94609</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/ucsc-heller-housing.webp"
+              data-title="UCSC Heller Housing"
+              data-address="4204 Student Housing West - 1156 High St, Santa Cruz, CA 95064"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/ucsc-heller-housing.webp"
+                  alt="UCSC Heller Housing BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>UCSC Heller Housing</strong>
+                <span>4204 Student Housing West - 1156 High St, Santa Cruz, CA 95064</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/east-county-services-center.webp"
+              data-title="East County Services Center"
+              data-address="Technology Way, Brentwood, CA 94513"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/east-county-services-center.webp"
+                  alt="East County Services Center BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Civic</span>
+                <strong>East County Services Center</strong>
+                <span>Technology Way, Brentwood, CA 94513</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/sonoma-government-center.webp"
+              data-title="Sonoma Government Center"
+              data-address="Ventura Avenue, Santa Rosa, CA 95403"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/sonoma-government-center.webp"
+                  alt="Sonoma Government Center BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Civic</span>
+                <strong>Sonoma Government Center</strong>
+                <span>Ventura Avenue, Santa Rosa, CA 95403</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/ucb-heathcock.webp"
+              data-title="UCB Heathcock"
+              data-address="University Drive, Berkeley, CA 94701"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/ucb-heathcock.webp"
+                  alt="UCB Heathcock BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>UCB Heathcock</strong>
+                <span>University Drive, Berkeley, CA 94701</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/sfo-guardrail.webp"
+              data-title="SFO Guardrail"
+              data-address="San Francisco International Airport, San Francisco, CA 94128"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/sfo-guardrail.webp"
+                  alt="SFO Guardrail BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Infrastructure</span>
+                <strong>SFO Guardrail</strong>
+                <span>San Francisco International Airport, San Francisco, CA 94128</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/sfo-icebox.webp"
+              data-title="SFO Icebox"
+              data-address="San Francisco International Airport, San Francisco, CA 94128"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/sfo-icebox.webp"
+                  alt="SFO Icebox BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Infrastructure</span>
+                <strong>SFO Icebox</strong>
+                <span>San Francisco International Airport, San Francisco, CA 94128</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/sfusd.webp"
+              data-title="SFUSD"
+              data-address="135 Van Ness Avenue, San Francisco, CA 94102"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/sfusd.webp"
+                  alt="SFUSD BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>SFUSD</strong>
+                <span>135 Van Ness Avenue, San Francisco, CA 94102</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/stem-mission-college.webp"
+              data-title="STEM - Mission College"
+              data-address="3000 Mission College Blvd., Santa Clara, CA 95054"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/stem-mission-college.webp"
+                  alt="STEM - Mission College BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>STEM - Mission College</strong>
+                <span>3000 Mission College Blvd., Santa Clara, CA 95054</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/gilead-technical-development-center.webp"
+              data-title="Gilead Technical Development Center"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/gilead-technical-development-center.webp"
+                  alt="Gilead Technical Development Center BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Life science</span>
+                <strong>Gilead Technical Development Center</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/workday-meeting-center.webp"
+              data-title="Workday Meeting Center"
+              data-address="6120 Stoneridge Mall Drive, Pleasanton, CA 94588"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/workday-meeting-center.webp"
+                  alt="Workday Meeting Center BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Commercial</span>
+                <strong>Workday Meeting Center</strong>
+                <span>6120 Stoneridge Mall Drive, Pleasanton, CA 94588</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/west-valley-college.webp"
+              data-title="West Valley College"
+              data-address="1400 Fruitvale Avenue, Saratoga, CA 95070"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/west-valley-college.webp"
+                  alt="West Valley College BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>West Valley College</strong>
+                <span>1400 Fruitvale Avenue, Saratoga, CA 95070</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/sfo-cargo.webp"
+              data-title="SFO Cargo"
+              data-address="3000 Mission College Blvd., Santa Clara, CA 95054"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/sfo-cargo.webp"
+                  alt="SFO Cargo BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Infrastructure</span>
+                <strong>SFO Cargo</strong>
+                <span>3000 Mission College Blvd., Santa Clara, CA 95054</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/sutter-mob.webp"
+              data-title="Sutter MOB"
+              data-address="335 Lakeside Drive, Foster City, CA 94404"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/sutter-mob.webp"
+                  alt="Sutter MOB BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Healthcare</span>
+                <strong>Sutter MOB</strong>
+                <span>335 Lakeside Drive, Foster City, CA 94404</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/millbrae-yards-phase-ii.webp"
+              data-title="Millbrae Yards Phase II"
+              data-address="3000 Mission College Blvd., Santa Clara, CA 95054"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/millbrae-yards-phase-ii.webp"
+                  alt="Millbrae Yards Phase II BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Mixed-use</span>
+                <strong>Millbrae Yards Phase II</strong>
+                <span>3000 Mission College Blvd., Santa Clara, CA 95054</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/monterey-terminal.webp"
+              data-title="Monterey Terminal"
+              data-address="200 Fred Kane Drive, Monterey, CA 93940"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/monterey-terminal.webp"
+                  alt="Monterey Terminal BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Infrastructure</span>
+                <strong>Monterey Terminal</strong>
+                <span>200 Fred Kane Drive, Monterey, CA 93940</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/davidson-licht.webp"
+              data-title="Davidson &amp; Licht"
+              data-address="1329 N Main St, Walnut Creek, CA 94596"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/davidson-licht.webp"
+                  alt="Davidson &amp; Licht BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Retail</span>
+                <strong>Davidson &amp; Licht</strong>
+                <span>1329 N Main St, Walnut Creek, CA 94596</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/ccsf-diego-rivera.webp"
+              data-title="CCSF Diego Rivera"
+              data-address="50 Frida Kahlo Way, San Francisco, CA 94112"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/ccsf-diego-rivera.webp"
+                  alt="CCSF Diego Rivera BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>CCSF Diego Rivera</strong>
+                <span>50 Frida Kahlo Way, San Francisco, CA 94112</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/slac-national-accelerator-lab.webp"
+              data-title="SLAC - National Accelerator Lab"
+              data-address="2575 Sand Hill Rd, Menlo Park, CA 94025"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/slac-national-accelerator-lab.webp"
+                  alt="SLAC - National Accelerator Lab BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Research</span>
+                <strong>SLAC - National Accelerator Lab</strong>
+                <span>2575 Sand Hill Rd, Menlo Park, CA 94025</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/san-quentin-rehabilitation-center.webp"
+              data-title="San Quentin Rehabilitation Center"
+              data-address="2575 Sand Hill Rd, Menlo Park, CA 94025"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/san-quentin-rehabilitation-center.webp"
+                  alt="San Quentin Rehabilitation Center BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Civic</span>
+                <strong>San Quentin Rehabilitation Center</strong>
+                <span>2575 Sand Hill Rd, Menlo Park, CA 94025</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/stanford-atrium.webp"
+              data-title="Stanford Atrium"
+              data-address="500 Pasteur Dr, Palo Alto, CA 94304"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/stanford-atrium.webp"
+                  alt="Stanford Atrium BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Healthcare</span>
+                <strong>Stanford Atrium</strong>
+                <span>500 Pasteur Dr, Palo Alto, CA 94304</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/ymca-redwood-city.webp"
+              data-title="YMCA - Redwood City"
+              data-address="1455 Madison Avenue, Redwood City, CA 94061"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/ymca-redwood-city.webp"
+                  alt="YMCA - Redwood City BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Civic</span>
+                <strong>YMCA - Redwood City</strong>
+                <span>1455 Madison Avenue, Redwood City, CA 94061</span>
+              </span>
+            </button>
+          </article>
+          <article class="bim-project-card bim-project-card--extra">
+            <button
+              class="bim-project-button"
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/sfsu-canopy.webp"
+              data-title="SFSU Canopy"
+              data-address="San Francisco State University, San Francisco, CA"
+            >
+              <span class="bim-project-media">
+                <img
+                  src="assets/bim-projects/sfsu-canopy.webp"
+                  alt="SFSU Canopy BIM model and coordination views"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="bim-project-meta">
+                <span class="bim-project-type">Education</span>
+                <strong>SFSU Canopy</strong>
+                <span>San Francisco State University, San Francisco, CA</span>
+              </span>
+            </button>
+          </article>
+          </div>
+
+          <button
+            class="button bim-show-all"
+            type="button"
+            id="bim-show-all"
+            aria-expanded="false"
+            aria-controls="bim-project-grid"
+          >
+            View all 42 projects
+          </button>
+        </section>
+
+        <section class="bim-story" id="adaptive-systems" aria-labelledby="adaptive-systems-title">
+          <div class="bim-story-copy">
+            <p class="eyebrow">System Development</p>
+            <h3 id="adaptive-systems-title">Adaptive units for non-rectangular facade conditions.</h3>
+            <p>
+              A flexible family system developed to carry unitized-window logic into raked,
+              tapered, and irregular openings. The assemblies retain configurable mullions,
+              infills, backpans, shadow boxes, and door conditions while adapting to hosted points.
+            </p>
+          </div>
+
+          <div class="bim-story-gallery">
+            <button
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/adaptive-units.webp"
+              data-title="Adaptive Units"
+              data-address="Custom facade-family development"
+            >
+              <img
+                src="assets/bim-projects/adaptive-units.webp"
+                alt="Adaptive facade units in varied shapes and configurations"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+
+            <button
+              type="button"
+              data-bim-lightbox
+              data-image="assets/bim-projects/adaptive-doors.webp"
+              data-title="Adaptive Door Systems"
+              data-address="Flexible door infills for irregular unit geometry"
+            >
+              <img
+                src="assets/bim-projects/adaptive-doors.webp"
+                alt="Adaptive door families and irregular facade-unit configurations"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </div>
+        </section>
+
+        <section class="bim-field-feature" id="field-fabrication" aria-labelledby="field-fabrication-title">
+          <div class="bim-field-copy">
+            <p class="eyebrow">Model to Field</p>
+            <h3 id="field-fabrication-title">Fabrication and installation remain part of the model story.</h3>
+            <p>
+              The portfolio connects digital coordination to fabrication reviews, site verification,
+              and installed facade work—keeping the final assembly visible alongside the model.
+            </p>
+          </div>
+
+          <button
+            class="bim-field-image"
+            type="button"
+            data-bim-lightbox
+            data-image="assets/bim-projects/field-fabrication.webp"
+            data-title="Fabrication & Field Integration"
+            data-address="Shop and installation documentation"
+          >
+            <img
+              src="assets/bim-projects/field-fabrication.webp"
+              alt="Facade fabrication and field installation photographs"
+              loading="lazy"
+              decoding="async"
+            />
+          </button>
         </section>
       </div>
     </section>
+
+    <dialog class="bim-lightbox" id="bim-lightbox" aria-labelledby="bim-lightbox-title">
+      <button class="bim-lightbox-close" type="button" aria-label="Close project image">×</button>
+      <div class="bim-lightbox-image-wrap">
+        <img id="bim-lightbox-image" src="" alt="" />
+      </div>
+      <div class="bim-lightbox-caption">
+        <h3 id="bim-lightbox-title"></h3>
+        <p id="bim-lightbox-address"></p>
+      </div>
+    </dialog>
+
+
 
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
