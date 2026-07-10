@@ -47,3 +47,18 @@ The BIM & Coordination page now embeds:
 `assets/bim-coordination-portfolio.pdf`
 
 Upload your BIM portfolio PDF to the `assets` folder using that exact filename.
+
+
+## Scrollable BIM portfolio
+
+The BIM & Coordination page now displays optimized WebP renders of all
+30 PDF pages in a clean scrolling reader without the browser PDF toolbar
+or thumbnail sidebar.
+
+The source PDF remains available at:
+
+`assets/bim-coordination-portfolio.pdf`
+
+The rendered pages are stored in:
+
+`assets/bim-portfolio-pages/`
