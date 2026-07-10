@@ -189,6 +189,31 @@ h1 {
   grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
   gap: 80px;
 }
+
+
+.about-layout {
+  grid-template-columns: minmax(300px, 0.92fr) minmax(0, 1.08fr);
+  gap: 72px;
+  align-items: center;
+}
+.about-portrait {
+  display: flex;
+  flex-direction: column;
+}
+.about-photo {
+  width: min(100%, 430px);
+  height: auto;
+  background: transparent;
+}
+.about-copy {
+  align-self: center;
+  text-align: center;
+  margin-inline: auto;
+}
+.about-copy p {
+  margin-left: auto;
+  margin-right: auto;
+}
 .section-heading h2 {
   max-width: 850px;
   margin: 0;
@@ -313,6 +338,8 @@ h1 {
 @media (max-width: 980px) {
   .section { padding: 84px 0; }
   .hero-grid, .split-layout, .contact-grid { grid-template-columns: 1fr; gap: 50px; }
+  .about-layout { align-items: start; }
+  .about-photo { width: min(100%, 380px); }
   .hero-panel { max-width: 650px; }
   .capability-grid { grid-template-columns: 1fr 1fr; }
   .project-grid { grid-template-columns: 1fr 1fr; }
@@ -353,6 +380,7 @@ h1 {
   .role-heading > span { text-align: left; }
   .capability-grid, .skills-wrap, .project-grid { grid-template-columns: 1fr; }
   .capability-card { min-height: 270px; }
+  .about-photo { width: min(100%, 320px); }
   .capability-card h3 { margin-top: 58px; }
   .contact-links a { flex-direction: column; gap: 5px; }
   .contact-links strong { text-align: left; }
