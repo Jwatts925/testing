@@ -1643,3 +1643,19 @@ body {
     font-size: 0.78rem;
   }
 }
+
+
+/* ===== Portfolio visibility safeguard =====
+   The BIM spreads remain visible even if script.js is cached or unavailable.
+*/
+.portfolio-pdf-visible,
+.portfolio-pdf-visible .portfolio-reader,
+.portfolio-pdf-visible .portfolio-spreads {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.portfolio-pdf-visible .portfolio-spread {
+  display: block !important;
+}
