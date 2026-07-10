@@ -825,3 +825,31 @@ h1 {
   object-fit: cover;
   display: block;
 }
+
+
+/* Selected Work image framing */
+#work .section-note {
+  display: none;
+}
+
+#work .project-visual {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(19, 24, 28, 0.08);
+}
+
+#work.section-dark .project-visual {
+  background: #ffffff;
+}
+
+#work .project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #ffffff;
+}
