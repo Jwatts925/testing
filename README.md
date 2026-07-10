@@ -38,3 +38,12 @@ The four capability cards on the home page now link to:
 - `visualization.html`
 
 Keep these HTML files in the repository root beside `index.html`.
+
+
+## BIM portfolio PDF
+
+The BIM & Coordination page now embeds:
+
+`assets/bim-coordination-portfolio.pdf`
+
+Upload your BIM portfolio PDF to the `assets` folder using that exact filename.
