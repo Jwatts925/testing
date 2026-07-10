@@ -1643,3 +1643,14 @@ body {
     font-size: 0.78rem;
   }
 }
+
+
+/* Hero focus-card cleanup */
+.hero-panel::after {
+  content: none !important;
+  display: none !important;
+}
+
+.hero-panel h2 {
+  margin-top: 0;
+}
