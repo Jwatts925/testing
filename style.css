@@ -1280,3 +1280,49 @@ body {
     align-self: auto;
   }
 }
+
+
+/* ===== Final ribbon and About portrait adjustments ===== */
+
+/* Remove the blue/slate rectangle around the About portrait */
+#about .about-photo-shell {
+  min-height: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+#about .about-photo {
+  background: transparent !important;
+}
+
+/* Keep the top navigation ribbon orange */
+.site-header,
+.category-page .site-header {
+  background: rgba(255, 138, 91, 0.97) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.30) !important;
+}
+
+/* Keep the bottom footer ribbon Tech Blue */
+.site-footer,
+.category-page .site-footer {
+  background: #3f60b1 !important;
+  color: #ffffff !important;
+  border-top: 0 !important;
+}
+
+.site-footer p,
+.site-footer a,
+.category-page .site-footer p,
+.category-page .site-footer a {
+  color: #ffffff !important;
+}
+
+/* Match the mobile navigation to the orange top ribbon */
+@media (max-width: 760px) {
+  .site-nav {
+    background: #ff8a5b !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30) !important;
+  }
+}
