@@ -1187,3 +1187,96 @@ body {
     align-self: auto;
   }
 }
+
+
+/* ===== Final requested refinements ===== */
+
+/* Orange top and bottom ribbons */
+.site-header,
+.category-page .site-header {
+  background: rgba(255, 138, 91, 0.97);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+.site-footer {
+  background: #ff8a5b;
+  color: #ffffff;
+}
+
+.site-footer a,
+.site-footer p,
+.brand,
+.site-nav a {
+  color: #ffffff;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.brand:hover,
+.brand:focus-visible {
+  color: #f2f230;
+}
+
+/* Selected Work button is neutral until hover */
+.hero-panel-actions .button-primary {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.48);
+  color: #ffffff;
+}
+
+.hero-panel-actions .button-primary:hover,
+.hero-panel-actions .button-primary:focus-visible {
+  background: #ff8a5b;
+  border-color: #ff8a5b;
+  color: #ffffff;
+}
+
+/* Remove the blue border around the About portrait */
+.about-photo-shell {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove the Education card box and bottom-align the degree information */
+#education .split-layout {
+  align-items: end;
+}
+
+#education .education-card {
+  align-self: end;
+  padding: 0;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+#education .education-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Keep contact information bottom-aligned */
+.contact-grid {
+  align-items: end;
+}
+
+.contact-links {
+  align-self: end;
+}
+
+/* Orange mobile navigation panel to match the header */
+@media (max-width: 760px) {
+  .site-nav {
+    background: #ff8a5b;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+  }
+}
+
+@media (max-width: 980px) {
+  #education .split-layout {
+    align-items: start;
+  }
+
+  #education .education-card {
+    align-self: auto;
+  }
+}
