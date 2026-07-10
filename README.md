@@ -26,3 +26,15 @@ Create an `assets/images` folder and replace each `.project-visual` placeholder 
 ```
 
 Update the related project title, description, and link in the same card.
+
+
+## Portfolio category pages
+
+The four capability cards on the home page now link to:
+
+- `bim-coordination.html`
+- `automation.html`
+- `documentation.html`
+- `visualization.html`
+
+Keep these HTML files in the repository root beside `index.html`.
