@@ -191,14 +191,27 @@ h1 {
 }
 
 
+
+
+#about.section-muted {
+  background: var(--white);
+}
 .about-layout {
-  grid-template-columns: minmax(300px, 0.92fr) minmax(0, 1.08fr);
-  gap: 72px;
+  grid-template-columns: minmax(320px, 0.96fr) minmax(0, 1.04fr);
+  gap: 82px;
   align-items: center;
 }
 .about-portrait {
   display: flex;
   flex-direction: column;
+}
+.about-photo-shell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 560px;
+  padding: 32px;
+  background: #ecebe6;
 }
 .about-photo {
   width: min(100%, 430px);
@@ -207,13 +220,9 @@ h1 {
 }
 .about-copy {
   align-self: center;
-  text-align: center;
-  margin-inline: auto;
+  margin-top: 36px;
 }
-.about-copy p {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .section-heading h2 {
   max-width: 850px;
   margin: 0;
@@ -339,7 +348,9 @@ h1 {
   .section { padding: 84px 0; }
   .hero-grid, .split-layout, .contact-grid { grid-template-columns: 1fr; gap: 50px; }
   .about-layout { align-items: start; }
+  .about-photo-shell { min-height: auto; padding: 24px; }
   .about-photo { width: min(100%, 380px); }
+  .about-copy { margin-top: 0; }
   .hero-panel { max-width: 650px; }
   .capability-grid { grid-template-columns: 1fr 1fr; }
   .project-grid { grid-template-columns: 1fr 1fr; }
@@ -380,6 +391,7 @@ h1 {
   .role-heading > span { text-align: left; }
   .capability-grid, .skills-wrap, .project-grid { grid-template-columns: 1fr; }
   .capability-card { min-height: 270px; }
+  .about-photo-shell { padding: 18px; }
   .about-photo { width: min(100%, 320px); }
   .capability-card h3 { margin-top: 58px; }
   .contact-links a { flex-direction: column; gap: 5px; }
