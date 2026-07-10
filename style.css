@@ -1326,3 +1326,72 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.30) !important;
   }
 }
+
+
+/* ===== Header name and Education refinements ===== */
+
+/* Make James Watts larger and give the lettering more breathing room */
+.site-header .brand,
+.category-page .site-header .brand {
+  font-size: 1.18rem !important;
+  font-weight: 700;
+  letter-spacing: 0.065em !important;
+}
+
+/* Keep the Education columns aligned at the bottom */
+#education .split-layout {
+  align-items: end;
+}
+
+/* Remove the card/rectangle while retaining a structured layout */
+#education .education-card {
+  align-self: end;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Contact-style accent dividers */
+#education .education-card > * {
+  margin: 0 !important;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(63, 96, 177, 0.28);
+}
+
+#education .education-card > *:first-child {
+  border-top: 3px solid #ff8a5b;
+  padding-top: 18px;
+}
+
+#education .education-card > *:last-child {
+  border-bottom: 1px solid rgba(63, 96, 177, 0.28);
+}
+
+/* Preserve the visual hierarchy */
+#education .education-years {
+  color: #ff8a5b !important;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+}
+
+#education .education-card h3 {
+  color: #3f60b1 !important;
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+}
+
+#education .education-card p:last-child {
+  color: #3f60b1 !important;
+}
+
+/* Stack naturally on smaller screens */
+@media (max-width: 980px) {
+  #education .split-layout {
+    align-items: start;
+  }
+
+  #education .education-card {
+    align-self: auto;
+    width: 100%;
+  }
+}
