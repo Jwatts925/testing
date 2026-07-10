@@ -1097,3 +1097,93 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   }
 }
+
+
+/* ===== White light sections + green header + contact alignment ===== */
+.site-header,
+.category-page .site-header {
+  background: rgba(148, 191, 167, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+/* Replace the muted-green section backgrounds with white */
+.section-light,
+#about.section-light,
+#capabilities.section-light,
+#education.section-light {
+  background: #ffffff;
+  color: #3f60b1;
+}
+
+/* Readable Tech Blue typography on white sections */
+.section-light h1,
+.section-light h2,
+.section-light h3,
+.section-light p,
+.section-light li,
+.section-light strong,
+.section-light .section-note,
+.section-light .prose p,
+.section-light .role-heading p,
+.section-light .role-heading > span,
+.section-light .timeline-card ul,
+.section-light .timeline-card li,
+.section-light .capability-card p,
+.section-light .education-card p:last-child {
+  color: #3f60b1 !important;
+}
+
+.section-light .eyebrow,
+#capabilities.section-light .eyebrow,
+#capabilities.section-light .card-number,
+.section-light .timeline-date,
+.section-light .education-years {
+  color: #ff8a5b !important;
+}
+
+/* Pale Slate surfaces on white sections */
+#capabilities.section-light .capability-card,
+#education.section-light .education-card,
+.category-project {
+  background: #d2d7df !important;
+  border: 1px solid rgba(63, 96, 177, 0.18) !important;
+  color: #3f60b1;
+}
+
+#capabilities.section-light .tag-list span,
+.category-navigation a {
+  background: #d2d7df;
+  color: #3f60b1;
+  border-color: rgba(63, 96, 177, 0.18);
+}
+
+#capabilities.section-light .skills-wrap,
+.section-light .timeline-item {
+  border-color: rgba(63, 96, 177, 0.20) !important;
+}
+
+/* Keep the portrait panel softly framed on white */
+.about-photo-shell {
+  background: #d2d7df !important;
+  border-color: rgba(63, 96, 177, 0.18) !important;
+}
+
+/* Bottom-align contact links with the left contact text block */
+.contact-grid {
+  align-items: end;
+}
+
+.contact-links {
+  align-self: end;
+  width: 100%;
+}
+
+@media (max-width: 980px) {
+  .contact-grid {
+    align-items: stretch;
+  }
+
+  .contact-links {
+    align-self: auto;
+  }
+}
