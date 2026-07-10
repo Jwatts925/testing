@@ -1395,3 +1395,28 @@ body {
     width: 100%;
   }
 }
+
+
+/* ===== Final specificity fix ===== */
+
+/* Slightly larger, more widely spaced name */
+.site-header .brand,
+.category-page .site-header .brand {
+  font-size: 1.26rem !important;
+  letter-spacing: 0.10em !important;
+}
+
+/* Override the more-specific old Education card styling */
+#education.section-light .education-card,
+#education .education-card {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Ensure the individual education rows stay transparent */
+#education.section-light .education-card > *,
+#education .education-card > * {
+  background: transparent !important;
+}
