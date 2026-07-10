@@ -62,21 +62,3 @@ The source PDF remains available at:
 The rendered pages are stored in:
 
 `assets/bim-portfolio-pages/`
-
-
-## Architectural BIM gallery
-
-The BIM & Coordination page now uses a compact architectural project gallery
-instead of displaying the PDF page by page.
-
-- 46 project cards
-- 4 featured-project compositions
-- expandable project archive
-- Adaptive Systems feature
-- Field + Fabrication feature
-- click-to-enlarge project images
-- original PDF remains available from the Open PDF button
-
-Project image assets are stored in:
-
-`assets/bim-projects/`
