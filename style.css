@@ -867,3 +867,233 @@ h1 {
   max-height: 100%;
   object-fit: contain;
 }
+
+
+/* ===== Palette refresh based on provided swatches =====
+   Tech Blue  : #3F60B1
+   Coral Glow : #FF8A5B
+   Canary Yellow: #F2F230
+   Pale Slate : #D2D7DF
+   Muted Teal : #94BFA7
+   Text: white
+*/
+:root {
+  --ink: #ffffff;
+  --ink-soft: rgba(255, 255, 255, 0.84);
+  --paper: #d2d7df;
+  --white: #ffffff;
+  --line: rgba(255, 255, 255, 0.22);
+  --accent: #ff8a5b;
+  --accent-dark: #f2f230;
+  --hero-muted: rgba(255, 255, 255, 0.84);
+  --dark: #3f60b1;
+  --dark-soft: #94bfa7;
+  --shadow: 0 22px 60px rgba(38, 58, 110, 0.20);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.site-header {
+  background: rgba(63, 96, 177, 0.94);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.brand,
+.site-nav a,
+.footer-wrap a,
+.footer-wrap p {
+  color: #ffffff;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.brand:hover,
+.brand:focus-visible {
+  color: var(--accent-dark);
+}
+
+.skip-link {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.eyebrow,
+.section-dark .eyebrow,
+.section-light .eyebrow,
+.contact-section .eyebrow,
+.timeline-date,
+.project-type,
+.card-number,
+.project-link-label,
+.capability-action,
+.education-years {
+  color: var(--accent-dark);
+}
+
+.button {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+.button-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.button-secondary {
+  background: transparent;
+  color: #ffffff;
+}
+
+.button-secondary:hover,
+.button-primary:hover {
+  background: rgba(255, 138, 91, 0.88);
+  border-color: rgba(255, 138, 91, 0.88);
+}
+
+.section-dark,
+.hero.section-dark {
+  background: var(--dark);
+  color: #ffffff;
+}
+
+.section-light,
+#about.section-light,
+#capabilities.section-light,
+#education.section-light {
+  background: var(--dark-soft);
+  color: #ffffff;
+}
+
+.contact-section {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.site-footer {
+  background: var(--dark);
+  color: #ffffff;
+}
+
+.section-light h1,
+.section-light h2,
+.section-light h3,
+.section-light p,
+.section-light li,
+.section-light strong,
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark p,
+.section-dark li,
+.section-dark strong,
+.contact-section h2,
+.contact-section p,
+.contact-section strong,
+.contact-section a {
+  color: #ffffff;
+}
+
+.hero-intro,
+.section-note,
+.prose p,
+.role-heading p,
+.role-heading > span,
+.timeline-card ul,
+.timeline-card li,
+.hero-panel p,
+.hero-meta span,
+.project-content > p:not(.project-type),
+.education-card p:last-child,
+.capability-card p,
+.contact-grid > div:first-child > p:last-child,
+.contact-links span,
+.contact-links strong {
+  color: rgba(255, 255, 255, 0.84) !important;
+}
+
+.hero-panel,
+#work.section-dark .project-card,
+#capabilities.section-light .capability-card,
+#education.section-light .education-card,
+.category-summary,
+.category-project,
+.about-photo-shell {
+  background: rgba(210, 215, 223, 0.16) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: none;
+}
+
+.hero-panel::after {
+  border-color: rgba(242, 242, 48, 0.30);
+}
+
+.about-photo-shell {
+  background: rgba(210, 215, 223, 0.22) !important;
+}
+
+.hero-meta,
+.timeline-item,
+.skills-wrap,
+.contact-links,
+.contact-links a {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+#capabilities.section-light .skills-wrap {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+#capabilities.section-light .tag-list span,
+.focus-list span,
+.contact-links a:hover {
+  background: rgba(210, 215, 223, 0.16);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.20);
+}
+
+.project-card-link:hover,
+.capability-link:hover,
+.category-navigation a:hover {
+  box-shadow: 0 16px 38px rgba(38, 58, 110, 0.20);
+}
+
+#work .project-visual {
+  background: #ffffff !important;
+  border-bottom: 1px solid rgba(63, 96, 177, 0.10);
+}
+
+.project-link-label,
+#work.section-dark .project-content a,
+.project-content a,
+.category-back,
+.category-project .project-status {
+  color: var(--accent-dark) !important;
+}
+
+.category-navigation a {
+  background: rgba(210, 215, 223, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.category-navigation a[aria-current="page"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.menu-toggle span {
+  background: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .site-nav {
+    background: var(--dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
