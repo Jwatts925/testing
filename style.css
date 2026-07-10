@@ -812,3 +812,16 @@ h1 {
 .section-dark .project-card-link .project-link-label {
   color: #ef8a65;
 }
+
+
+/* Real project thumbnails in Selected Work */
+.project-visual {
+  background: #d9d9d9;
+}
+
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
